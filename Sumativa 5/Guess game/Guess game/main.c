@@ -1,8 +1,10 @@
 
+// Elaborar una aplicación de línea de comandos en C que permita al usuario adivinar una palabra secreta. El usuario tiene un máximo de 3 intentos para lograrlo. Los intentos ejecutados por el usuario deben aparecer en pantalla.
+
+
 #include <stdio.h>
-#include <stdint.h>
 #include <string.h>
-#include <stdlib.h>
+
 
 
 
@@ -47,7 +49,7 @@ int main()
     {
     printf("\n\n****WIN!**** \n\n\n\n\n\n");
     }
-        
+       
         strcpy(Guessword, back);
         count = 0;
         
@@ -58,10 +60,13 @@ int main()
     
     
     
-    while (again == 'y');
+    while (again == 'y' ||again =='Y');
     
     
     printf("\n\n Thanks for playing! \n\n\n\n\n");
   
     return 0;
 }
+
+
+
